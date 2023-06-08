@@ -1,0 +1,11 @@
+# Template file for 'choose'
+pkgname=choose
+version=v1.3.4
+revision=1
+build_style=cargo
+short_desc="Fast, human-friendly alternative to awk(1) and cut(1)"
+maintainer="Folling <mail@folling.io>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/theryangeary/choose"
+distfiles="https://github.com/theryangeary/choose/archive/${version}.tar.gz"
+checksum=6c711901bb094a1241a2cd11951d5b7c96f337971f8d2eeff33f38dfa6ffb6ed
