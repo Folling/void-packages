@@ -1,5 +1,5 @@
 pkgname=mullvad-vpn
-version=2025.14
+version=2026.3
 revision=1
 only_for_archs="x86_64"
 short_desc="VPN client software for the Mullvad VPN service"
