@@ -1,0 +1,20 @@
+# Template file for 'phpactor'
+pkgname=phpactor
+version=2025.12.21.1
+revision=1
+build_style=fetch
+depends="php>=8.2"
+short_desc="PHP language server and refactoring/introspection tool"
+maintainer="Folling mail@folling.io"
+license="MIT"
+homepage="https://github.com/phpactor/phpactor"
+changelog="https://raw.githubusercontent.com/phpactor/phpactor/master/CHANGELOG.md"
+distfiles="https://github.com/phpactor/phpactor/releases/download/${version}/phpactor.phar>phpactor-${version}.phar
+ https://raw.githubusercontent.com/phpactor/phpactor/${version}/LICENSE>phpactor-${version}.LICENSE"
+checksum="53bbe9625cd9b5e9b394bc2f595fbad13dbbe6dfc96950c56dea3b5d9a246cc3
+ 4287c3b7c293133dc59e92cb32a1aae899c4441ac6d64455c537c82070c84caa"
+
+do_install() {
+	vbin phpactor-${version}.phar phpactor
+	vlicense phpactor-${version}.LICENSE LICENSE
+}
